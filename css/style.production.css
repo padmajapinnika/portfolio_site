@@ -1,0 +1,364 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 1px;;
+    padding:1px;
+}  
+*{
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+    body{
+    background-color: hsl(84, 60%, 79%);
+    font-family: nunito, serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: sans-serif
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  
+  a {
+    color: #526d00;
+  }
+  
+  a:hover {
+    /* No underlining when hovering over a link */
+    text-decoration: none;
+  }
+  a:visited {
+    /* visited link */
+    color: #2b2b2b;
+  }
+  
+  a:active {
+    /* selected link */
+    color: #a0bba2;;
+    
+  }
+  a:hover, a:focus {
+    text-decoration: none;
+  }
+  button {
+    border: none;
+    font-family: inherit;
+    background-color: #357b70;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  }
+  button:hover, button:focus {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  .button_ secondary {
+    background-color: #dcb871;
+    color: #e0b354;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    
+  }
+  .mytable{
+    background-color: #a0bba2;
+  }
+
+  .page-footer{
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;     
+    -webkit-box-align: center;     
+        -ms-flex-align: center;     
+            align-items: center; 
+    text-align: center;
+    
+  }
+  .page-header{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .page-header__ item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100px;
+            flex: 0 1 100px;
+
+  }
+  .page-header__ item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: right;
+
+  }
+  .navigation-list {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .navigation-list li {
+    display: inline-block;
+    margin-left: 25px;
+  }
+  .navigation-list__ item {
+    position: relative;
+    color: #2b2b2b;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.navigation-list__ item:hover {
+   /* Change text color */
+   color: #a0bba2;
+  background-color: #f4f4f4; /* Add a background color on hover */
+  border-radius: 3px; /* Add rounded corners on hover */
+}
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    }
+  
+  .grid__ item {
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+    background-color: whitesmoke;
+    color: #033a32;
+  }
+  .grid__ item:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05); /* Expand by 5% */
+  }
+
+
+
+.info-text {
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+}
+
+  #myp{
+    color: #b49f43;
+  }
+
+  @media all and (max-width:500px){
+    .grid {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
+  }
+  @media all and (min-width: 500px) and (max-width: 750px){
+    .grid {
+      -ms-grid-columns: 1fr 10px 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media all and (max-width: 750px) {
+    .grid {
+      grid-gap: 10px;
+    }
+    .grid__ item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 24px;
+    }
+  }
+
+  .button {
+    /* overwrites browser defaults */
+    /* resets the border */
+    border: solid;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* style button */
+    background-color: #25564f;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid hsla(0, 0%, 0%, 0.3);
+    -webkit-transition: opacity 0.8s;
+    -o-transition: opacity 0.8s;
+    transition: opacity 0.8s;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+
+  button {
+    /* overwrites browser defaults */
+    /* resets the border */
+    border: solid;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* style button */
+    background-color: #25564f;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid hsla(0, 0%, 0%, 0.3);
+    -webkit-transition: opacity 0.8s;
+    -o-transition: opacity 0.8s;
+    transition: opacity 0.8s;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+
+
+@-webkit-keyframes rotate-dance {
+  0% {
+      -webkit-transform: rotate(0deg) scale(1);
+              transform: rotate(0deg) scale(1);
+  }
+  25% {
+      -webkit-transform: rotate(90deg) scale(1.1);
+              transform: rotate(90deg) scale(1.1); /* Rotate 90 degrees and slightly grow */
+  }
+  50% {
+      -webkit-transform: rotate(180deg) scale(1.2);
+              transform: rotate(180deg) scale(1.2); /* Rotate 180 degrees and grow more */
+  }
+  75% {
+      -webkit-transform: rotate(270deg) scale(1.1);
+              transform: rotate(270deg) scale(1.1); /* Rotate 270 degrees and shrink slightly */
+  }
+  100% {
+      -webkit-transform: rotate(360deg) scale(1);
+              transform: rotate(360deg) scale(1); /* Complete a full 360 rotation and return to normal size */
+  }
+}
+
+
+@keyframes rotate-dance {
+  0% {
+      -webkit-transform: rotate(0deg) scale(1);
+              transform: rotate(0deg) scale(1);
+  }
+  25% {
+      -webkit-transform: rotate(90deg) scale(1.1);
+              transform: rotate(90deg) scale(1.1); /* Rotate 90 degrees and slightly grow */
+  }
+  50% {
+      -webkit-transform: rotate(180deg) scale(1.2);
+              transform: rotate(180deg) scale(1.2); /* Rotate 180 degrees and grow more */
+  }
+  75% {
+      -webkit-transform: rotate(270deg) scale(1.1);
+              transform: rotate(270deg) scale(1.1); /* Rotate 270 degrees and shrink slightly */
+  }
+  100% {
+      -webkit-transform: rotate(360deg) scale(1);
+              transform: rotate(360deg) scale(1); /* Complete a full 360 rotation and return to normal size */
+  }
+}
+@-webkit-keyframes home-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
+  }
+}
+@keyframes home-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
+  }
+}
+.home {
+  -webkit-animation: 3s home-move infinite alternate linear;
+          animation: 3s home-move infinite alternate linear;
+}
+
+.girl {
+  -webkit-animation: rotate-dance 4s infinite ease-in-out;
+          animation: rotate-dance 4s infinite ease-in-out;
+}
+
+
+@-webkit-keyframes color-change {
+  0% {
+    fill: #a0bba2;
+  }
+  50% {
+    fill: #25564f;
+  }
+  100% {
+    fill: #e0b354;
+  }
+}
+
+
+@keyframes color-change {
+  0% {
+    fill: #a0bba2;
+  }
+  50% {
+    fill: #25564f;
+  }
+  100% {
+    fill: #e0b354;
+  }
+}
+.tree {
+  -webkit-animation: 4s color-change infinite alternate linear;
+          animation: 4s color-change infinite alternate linear;
+}
