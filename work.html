@@ -1,115 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about me</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.production.css"> 
-        <link rel="icon" href="img/fav_icon.png" type="image/x-icon">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Padmaja's Portfolio</title>
+
+  <!-- Fonts and Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.production.css"/>
+  <link rel="icon" href="img/fav_icon.png" type="image/x-icon"/>
 </head>
 <body>
-    <header class="page-header">
-    <h1>Pinnika Padmaja</h1>
-    <nav class="main-navigation page-header__item">
+
+  <!-- Header -->
+  <header class="page-header">
+    <div class="container header-wrapper">
+      <h1 class="page-header__title">Padmaja Pinnika</h1>
+      <nav class="main-navigation">
         <ul class="navigation-list">
-            <li>
-                <a href="index.html" class="navigation-list__item">Home</a>
-            </li>
-            <li>
-                <a href="about.html" class="navigation-list__item">About</a>
-            </li>
-            <li>
-                <a href="work.html" class="navigation-list__item">Work</a> <!-- New Work link -->
-            </li>
-            <li>
-                <a href="contact.html" class="navigation-list__item">Contact</a>
-            </li>
+          <li><a href="index.html" class="navigation-list__item navigation-list__item--active" aria-current="page">Home</a></li>
+          <li><a href="about.html" class="navigation-list__item">About</a></li>
+          <li><a href="work.html" class="navigation-list__item">Work</a></li>
+          <li><a href="contact.html" class="navigation-list__item">Contact</a></li>
         </ul>
-    </nav>
-</header>
-<main>
-<section class="work">
-    <h1>Work</h1>
-    <div class="grid">
-        <div class="grid__item">
-            <div class="overlay">
-            <h2>Meet App</h2>
-            <p><strong>Objective:</strong> 
-                To build a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. 
-                The app uses the Google Calendar API to fetch upcoming events and displays them to users based on their city search.
-              </p>
-              <p><strong>Context:</strong> 
-                Meet App combines two major trends in web development: serverless architecture and PWAs. 
-                It loads instantly, works offline, and requires no backend maintenance. Using TDD ensures 
-                high-quality, reliable code. The app also features data visualizations like a scatterplot of events 
-                by location and a pie chart of event genres.
-              </p>
-              <p><strong>Hosted App:</strong> 
-                <a href="https://meet-ruddy-nine.vercel.app" target="_blank">Visit the live Meet App</a>
-              </p>
-              <p><strong>GitHub Repository:</strong> 
-                <a href="https://github.com/padmajapinnika/meet" target="_blank">View the code on GitHub</a>
-              </p>
-              <p><strong>Technologies Used:</strong> 
-                React.js, AWS Lambda, Serverless Framework, OAuth 2.0, Google Calendar API, Recharts (for data visualization), Jest, 
-                Puppeteer, React Testing Library, HTML5, CSS3, Git, GitHub Pages
-              </p>
-        </div>
+      </nav>
     </div>
+  </header>
+  <main>
+    <h1>My Projects</h1>
+    <p>Click on any project to see details.</p>
 
-        <div class="grid__item">
-            <div class="overlay">
-                <h2>myMovie API</h2>
-                <p><strong>Objective:</strong> 
-                    To build the server-side component of a "movies" web application. The application provides users with access to information about different movies, directors, and genres. Users can sign up, update personal information, and create a list of favorite movies.
-                </p>
-                <p><strong>Context:</strong> 
-                    In today's development world, JavaScript developers must create and interface with APIs. This project demonstrates building a REST API for the "myFlix" application using Node.js, Express, and MongoDB. In the next step, a client-side React app will connect to this API. This full-stack project showcases mastery of the MERN stack.
-                </p>
-                <p><strong>GitHub Repository:</strong> 
-                    <a href="https://github.com/padmajapinnika/movie_api" target="_blank">View the code on GitHub</a>
-                </p>
-                <p><strong>Technologies Used:</strong> 
-                    Node.js, Express.js, MongoDB, Mongoose, Postman, JavaScript, REST API principles, Authentication, Authorization, CORS, Bcrypt, JWT, Heroku
-                </p>
-        </div>
+  <div id="portfolioGrid" class="grid">
+
+      <!-- Projects inserted by JS -->
     </div>
+  </main>
 
-        <div class="grid__item">
-            <div class="overlay">
-            <h2>Portfolio Site</h2>
-            <p>
-                This is the portfolio website you're currently browsing. I built it using HTML, CSS, and JavaScript.
-            </p>
-            <a href="#">See project on GitHub</a>
-        </div>
+  <!-- Modal -->
+  <div id="projectModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);align-items:center;justify-content:center;">
+    <div style="background:#fff;padding:1rem;max-width:600px;width:90%;border-radius:8px;position:relative;">
+      <button id="modalClose" style="position:absolute;top:10px;right:10px;font-size:1.5rem;cursor:pointer;">×</button>
+      <h2 id="modalTitle"></h2>
+      <p><strong>Objective:</strong> <span id="modalObjective"></span></p>
+      <p><strong>Technologies:</strong> <span id="modalTech"></span></p>
+      <p><strong>Links:</strong> <span id="modalLinks"></span></p>
     </div>
+  </div>
 
-        <div class="grid__item">
-            <div class="overlay">
-            <h2>eCommerce Website</h2>
-            <p>
-                For this project, I designed and developed an eCommerce website with a complete shopping experience.
-            </p>
-            <a href="#">See project on GitHub</a>
-        </div>
-    </div>
+ <script>
+  const projects = [
+    {
+      title: "pokedex",
+      technologies: "HTML, CSS, JavaScript, Bootstrap,PokeApi,Github Pages",
+      objective: "The Pokédex App is a responsive web application that allows users to browse and learn about various Pokémon. The app fetches data from an external API and presents it in an intuitive and user-friendly interface.",
+      github: "https://github.com/padmajapinnika/simple-js-app",
+      live: "https://padmajapinnika.github.io/simple-js-app/#",
+      thumbnail: "img/simple js.png",
+    },
+    {
+      title: "Movie API",
+      technologies: "Node.js, Express, MongoDB&Mongoose,JWT & Passport.js,CORS,MongoDB Atlas,Heroku REST API",
+      objective: "The \"myFlix API\" is a RESTful backend application for managing movies, users, and favorite movie lists. It serves data about movies, directors, and genres, enabling users to interact with this data securely.",
+      github: "https://github.com/padmajapinnika/movie_api",
+      live: "https://movie-api-padma-7528be21ca05.herokuapp.com",
+      thumbnail: "img/movie_api.png",
+    },
+    {
+      title: "MyFlix Client",
+      technologies: "react,React Router,redux,bootstrap,Parcel,Neltlify,Node.js,MongoDB&Mongoose,JWT&Passport.js,CORS,MongoDB Atlas,Heroku",
+      objective: "The \"MyFlix Client\" is a React-based front-end application for managing and exploring a movie database. It allows users to view movies, manage favorites, and interact with user profiles through a user-friendly and responsive interface.",
+      github: "https://github.com/padmajapinnika/myflix-client",
+      live: "https://padmajapinnika-1215.netlify.app/login",
+      thumbnail: "img/movie_api_client.png",
+    },
+    {
+      title: "Meet App",
+      technologies: "React,AWS Lambda,Googlr Clender API.Jest&Cucumber,OAth2,Recharts,Service Workers,Vercel",
+      objective: "The \"Meet App\" is a serverless, progressive web application (PWA) that provides a smooth and interactive experience for users to view and filter upcoming events. The app integrates with the Google Calendar API to display real-time event data.",
+      github: "https://github.com/padmajapinnika/meet",
+      live: "https://meet-ruddy-nine.vercel.app/",
+      thumbnail: "img/meet_app.png",
+    },
+    {
+      title: "Chat App",
+      technologies: "React Native,Expo,Firebase Firestor,Gifted Chat,AsyncStorage",
+      objective: "The \"Chat App\" is a mobile chat application built with React Native and Expo. It provides users with a seamless chat experience where they can send messages, share images, and their location. The app uses Google Firebase for real-time data storage and authentication.",
+      github: "https://github.com/padmajapinnika/chat-app",
+      thumbnail: "img/chat_app.png",
+    },
+    {
+      title: "Angular Client",
+      technologies: "Angular,Angular Material,TypeScript,Github Pages,Node.js&Express,MongoDB&Mongoose,JWT&Passport.js,CORS,MongoDb Atlas,Heroku",
+      objective: "myFlix is a movie discovery app built using Angular. It allows users to browse movies, view details about directors and genres, and manage their favorite movies.",
+      github: "https://github.com/padmajapinnika/angular-client",
+      live: "https://padmajapinnika.github.io/myFlix-Angular-client/welcome",
+      thumbnail: "img/my_flix_angular.png",
+    },
+  ];
 
-</div>
-</section>
-</main>
+  const grid = document.getElementById('portfolioGrid');
+  const modal = document.getElementById('projectModal');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalObjective = document.getElementById('modalObjective');
+  const modalTech = document.getElementById('modalTech');
+  const modalLinks = document.getElementById('modalLinks');
+  const modalClose = document.getElementById('modalClose');
+
+  function openModal(project) {
+    modalTitle.textContent = project.title;
+    modalObjective.textContent = project.objective;
+    modalTech.textContent = project.technologies;
+
+
+    modalLinks.innerHTML = "";
+    if (project.github) {
+      const ghLink = document.createElement('a');
+      ghLink.href = project.github;
+      ghLink.target = "_blank";
+      ghLink.textContent = "GitHub";
+      ghLink.style.marginRight = "1rem";
+      ghLink.style.color = "#0366d6";
+      ghLink.style.fontWeight = "bold";
+      modalLinks.appendChild(ghLink);
+    }
+    if (project.live) {
+      const liveLink = document.createElement('a');
+      liveLink.href = project.live;
+      liveLink.target = "_blank";
+      liveLink.textContent = "Live Demo";
+      liveLink.style.color = "#28a745";
+      liveLink.style.fontWeight = "bold";
+      modalLinks.appendChild(liveLink);
+    }
+
+    modal.style.display = "flex";
+  }
+
+  modalClose.addEventListener('click', () => {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener('click', e => {
+    if(e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+  // Render project cards
+  projects.forEach((project) => {
+    const card = document.createElement('div');
+    card.style.border = "1px solid #ccc";
+    card.style.borderRadius = "8px";
+    card.style.overflow = "hidden";
+    card.style.textAlign = "center";
+    card.style.background = "#fff";
+    card.style.boxShadow = "0 2px 5px rgba(0,0,0,0.1)";
+    card.style.display = "flex";
+    card.style.flexDirection = "column";
+
+    const title = document.createElement('h3');
+    title.textContent = project.title;
+    title.style.padding = "0.5rem";
+
+    const img = document.createElement('img');
+    img.src = project.thumbnail;
+    img.alt = `${project.title} thumbnail`;
+    img.style.width = "100%";
+    img.style.height = "150px";
+    img.style.objectFit = "cover";
+
+    const visitBtn = document.createElement('button');
+    visitBtn.textContent = "Visit Project";
+    visitBtn.style.margin = "0.5rem auto";
+    visitBtn.style.padding = "6px 12px";
+    visitBtn.style.backgroundColor = "#17a2b8";
+    visitBtn.style.color = "#fff";
+    visitBtn.style.border = "none";
+    visitBtn.style.borderRadius = "4px";
+    visitBtn.style.cursor = "pointer";
+    visitBtn.addEventListener('click', () => openModal(project));
+
+    card.appendChild(title);
+    card.appendChild(img);
+    card.appendChild(visitBtn);
+
+    grid.appendChild(card);
+  });
+</script>
+
+
 
 <footer class="page-footer">
-    <p>Find me on</p>
+  <p>Connect with me</p>
     <div class="social-media">
         <img src="img/github.svg" alt="Padmaja's Github Profile">
         <img src="img/instagram.svg" alt="Padmaja's Instagram Profile">
     </div>
 </footer>
+</div>
 </body>
     </html>

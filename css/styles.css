@@ -22,12 +22,10 @@
 
 *{
     box-sizing: border-box;
-    margin:1px;;
+    margin:1px;
     padding:1px;
+    transition: all 0.3s ease;
 }  
-*{
-  transition: all 0.3s ease;
-}
 
 body{
     background-color: var(--text-light);
@@ -105,11 +103,11 @@ h1 {
     text-align: center;
 
   }
-  .page-header__ item {
+  .page-header__item {
     flex: 0 1 100px;
 
   }
-  .page-header__ item:last-child {
+  .page-header__item:last-child {
     flex-grow: 1;
     text-align: right;
 
@@ -127,7 +125,7 @@ text-align: center;
     display:inline-block;
     margin-left: 25px;
   }
-  .navigation-list__ item {
+  .navigation-list__item {
     position: relative;
     color: var(--dark-grey);
     text-decoration: none;
@@ -135,7 +133,7 @@ text-align: center;
     font-size: 1rem;
     font-weight: 600;
 }
-.navigation-list__ item:hover {
+.navigation-list__item:hover {
    /* Change text color */
    color: var(--primary-light);
   background-color: #f4f4f4; /* Add a background color on hover */
@@ -163,14 +161,14 @@ text-align: center;
     grid-gap: 20px;
     }
   
-  .grid__ item {
+  .grid__item {
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease;
     background-color: whitesmoke;
     color: #033a32;
   }
-  .grid__ item:hover {
+  .grid__item:hover {
     transform: scale(1.05); /* Expand by 5% */
   }
 
@@ -202,7 +200,7 @@ text-align: center;
     .grid {
       grid-gap: 10px;
     }
-    .grid__ item:last-child {
+    .grid__item:last-child {
       grid-column: auto / auto;
       grid-row: auto / auto;
     }
@@ -212,8 +210,6 @@ text-align: center;
   }
 
   .button, button {
-    /* overwrites browser defaults */
-    /* resets the border */
     border: solid;
     display: inline-block;
     /* takes the font from the outer container */
@@ -232,39 +228,10 @@ text-align: center;
     height: 50px; 
   }
 
-  @keyframes color-change {
-    0% {
-      fill: #edc655;
-    }
-    50% {
-      fill: #fcffad;
-    }
-    100% {
-      fill: #f76414;
-    }
+  .container {
+    max-width: 1200px; /* You can adjust this */
+    margin: 0 auto; /* Center horizontally */
+    padding: 0 20px; /* Small side padding */
   }
-  .sun {
-    animation: 4s color-change infinite alternate linear;
-  }
-  @keyframes cloud-move {
-    from {
-      transform: translate(0, 50px);
-    }
-    to {
-      transform: translate(200px, 50px);
-    }
-  }
-  .cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
-  }
-  @keyframes cloud-move-reverse {
-    from {
-      transform: translate(446px, 48px);
-    }
-    to {
-      transform: translate(100px, 48px);
-    }
-  }
-  .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
-  }
+
+

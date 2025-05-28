@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Padmaja's protfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css"> 
-    <link rel="icon" href="img/fav_icon.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1">      
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Padmaja's Portfolio</title>
+
+  <!-- Fonts and Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.production.css"/>
+  <link rel="icon" href="img/fav_icon.png" type="image/x-icon"/>
 </head>
 <body>
-       
-        <header class="page-header">
-            <h1>Padmaja Pinnika</h1>
-        <nav class="main-navigation page-header__item">
-            <ul class="navigation-list">
-                <li>
-                    <a href="index.html" class="navigation-list__item navigation-list__item--active" aria-current="page">Home</a>
-                </li>
-                <li>
-                    <a href="about.html" class="navigation-list__item" aria-label="Learn more about Padmaja's background and experiences">About</a>
 
-                </li>
-                <li>
-                    <a href="work.html" class="navigation-list__item">Work</a> <!-- New Work link -->
-                </li>
-                <li>
-                    <a href="contact.html" class="navigation-list__item">Contact</a>
-                </li>
-            </ul>
-        </nav>
-     </header>
-    <main>
-      <div class="profile">
-        <img src="img/profile.png" height="200" class="page-header__item" alt="Padmaja's Logo">
-        <h1>Hello!</h1>
-        <p>My name is Padmaja Pinnika.</p>
-        <p>I am <span>web developer</span> based in USA.</p>
-        <p>
-            <a href="https://github.com/padmajapinnika" target="_blank">
-              👉 Check out my GitHub: <strong>@padmajapinnika</strong>
-            </a>
-          </p>
-            </div>
-        </main>
-        
-        <footer class="page-footer">
-            <p>Find me on</p>
-            <div class="social-media">
-                <img src="img/github.svg" alt="Padmaja's Github Profile">
-                <img src="img/instagram.svg" alt="Padmaja's Instagram Profile">
-            </div>
-        </footer>
+  <!-- Header -->
+  <header class="page-header">
+    <div class="container header-wrapper">
+      <h1 class="page-header__title">Padmaja Pinnika</h1>
+      <nav class="main-navigation">
+        <ul class="navigation-list">
+          <li><a href="index.html" class="navigation-list__item navigation-list__item--active" aria-current="page">Home</a></li>
+          <li><a href="about.html" class="navigation-list__item">About</a></li>
+          <li><a href="work.html" class="navigation-list__item">Work</a></li>
+          <li><a href="contact.html" class="navigation-list__item">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <script src="js/tota11y.min.js"></script>
+  <!-- Main Content -->
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <img src="img/profile.png" alt="Padmaja's profile image" class="hero__image" />
+        <div class="hero__text">
+          <h2>Hello, I'm <strong>Padmaja Pinnika</strong></h2>
+          <p class="job-title">A passionate <strong>Web Developer</strong> based in the USA</p>
+          <p>I love building user-friendly websites and applications.</p>
+          <a class="btn" href="https://github.com/padmajapinnika" target="_blank">Check out my work on GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="page-footer">
+    <div class="container">
+      <p>Connect with me</p>
+      <div class="social-media">
+        <a href="https://github.com/padmajapinnika" target="_blank" aria-label="GitHub">
+          <img src="img/github.svg" alt="GitHub icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/pinnika-padmaja-73110b20b/" target="_blank" aria-label="LinkedIn">
+          <img src="img/linkedin icon.svg" width="33" alt="LinkedIn icon" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/tota11y.min.js"></script>
 </body>
-
 </html>
-
