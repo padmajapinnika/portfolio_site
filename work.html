@@ -30,12 +30,14 @@
     </div>
   </header>
   <main>
+    <div class="container">
     <h1>My Projects</h1>
     <p>Click on any project to see details.</p>
 
   <div id="portfolioGrid" class="grid">
 
       <!-- Projects inserted by JS -->
+    </div>
     </div>
   </main>
 
@@ -70,7 +72,7 @@
     },
     {
       title: "MyFlix Client",
-      technologies: "react,React Router,redux,bootstrap,Parcel,Neltlify,Node.js,MongoDB&Mongoose,JWT&Passport.js,CORS,MongoDB Atlas,Heroku",
+      technologies: "react,React Router,redux,bootstrap,Parcel,Netlify,Node.js,MongoDB&Mongoose,JWT&Passport.js,CORS,MongoDB Atlas,Heroku",
       objective: "The \"MyFlix Client\" is a React-based front-end application for managing and exploring a movie database. It allows users to view movies, manage favorites, and interact with user profiles through a user-friendly and responsive interface.",
       github: "https://github.com/padmajapinnika/myflix-client",
       live: "https://padmajapinnika-1215.netlify.app/login",
@@ -78,7 +80,7 @@
     },
     {
       title: "Meet App",
-      technologies: "React,AWS Lambda,Googlr Clender API.Jest&Cucumber,OAth2,Recharts,Service Workers,Vercel",
+      technologies: "React,AWS Lambda,Google Calendar API.Jest&Cucumber,OAuth2,Recharts,Service Workers,Vercel",
       objective: "The \"Meet App\" is a serverless, progressive web application (PWA) that provides a smooth and interactive experience for users to view and filter upcoming events. The app integrates with the Google Calendar API to display real-time event data.",
       github: "https://github.com/padmajapinnika/meet",
       live: "https://meet-ruddy-nine.vercel.app/",
@@ -86,7 +88,7 @@
     },
     {
       title: "Chat App",
-      technologies: "React Native,Expo,Firebase Firestor,Gifted Chat,AsyncStorage",
+      technologies: "React Native,Expo,Firebase Firestore,Gifted Chat,AsyncStorage",
       objective: "The \"Chat App\" is a mobile chat application built with React Native and Expo. It provides users with a seamless chat experience where they can send messages, share images, and their location. The app uses Google Firebase for real-time data storage and authentication.",
       github: "https://github.com/padmajapinnika/chat-app",
       thumbnail: "img/chat_app.png",
@@ -193,13 +195,21 @@
 
 
 
-<footer class="page-footer">
-  <p>Connect with me</p>
-    <div class="social-media">
-        <img src="img/github.svg" alt="Padmaja's Github Profile">
-        <img src="img/instagram.svg" alt="Padmaja's Instagram Profile">
+ <!-- Footer -->
+  <footer class="page-footer">
+    <div class="container">
+      <p>Connect with me</p>
+      <div class="social-media">
+        <a href="https://github.com/padmajapinnika" target="_blank" aria-label="GitHub">
+          <img src="img/github.svg" alt="GitHub icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/pinnika-padmaja-73110b20b/" target="_blank" aria-label="LinkedIn">
+          <img src="img/linkedin icon.svg" width="33" alt="LinkedIn icon" />
+        </a>
+      </div>
     </div>
-</footer>
-</div>
+  </footer>
+
+  <script src="js/tota11y.min.js"></script>
 </body>
-    </html>
+</html>

@@ -2,7 +2,7 @@
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -12,7 +12,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  padding: 2rem 0;
+  padding: 3rem 0;
+  margin-bottom: 2rem;
 }
 
 .hero__image {
@@ -22,7 +23,7 @@
 
 .hero__text h2 {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .job-title {
@@ -50,8 +51,9 @@
 /* Header */
 .page-header {
   background-color: #2b6777;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
   color: white;
+  margin-bottom: 2rem;
 }
 
 .page-header__title {
@@ -89,6 +91,7 @@
   text-align: center;
   padding: 1rem;
   background-color: #f5f5f5;
+  margin-top: 2rem;
 }
 
 .social-media img {
@@ -103,18 +106,21 @@
 
 /* About Page Sections */
 .about-section {
-  padding: 2rem 0;
+  padding: 3rem 2rem;
   background-color: #f9f9f9;
+  margin-bottom: 2rem;
 }
 
 .cv-download {
-  padding: 2rem 0;
+  padding: 3rem 2rem;
   background-color: #eef6f7;
+  margin-bottom: 2rem;
 }
 
 .skills-section {
-  padding: 2rem 0;
+  padding: 3rem 2rem;
   background-color: #f5f5f5;
+  margin-bottom: 2rem;
 }
 
 /* Skills Table */
@@ -145,14 +151,15 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  padding: 0 1rem;
 }
 
 /* Project Card */
 #portfolioGrid > div {
   background: white;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -162,7 +169,7 @@
 
 #portfolioGrid > div:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Project Image */
@@ -181,30 +188,28 @@
   color: #2b6777;
   text-transform: capitalize;
   margin: 0;
-  flex-grow: 1; /* pushes button down */
+  flex-grow: 1;
 }
 
-/* Visit Button */
 #portfolioGrid button {
   margin: 0 1rem 1rem 1rem;
-  padding: 0.5rem 0;
-  background-color: #2b6777;
-  color: white;
+  padding: 0.6rem 1rem;
+  background-color: #17a2b8;
+  color: #fff;
   border: none;
-  border-radius: 5px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
+  border-radius: 4px;
+  font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 #portfolioGrid button:hover {
-  background-color: #22515f;
+  background-color: #138496;
 }
 
 /* Default link color */
 a {
-  color: #2b6777; /* Your primary blue color */
+  color: #2b6777;
   text-decoration: none;
   font-weight: 700;
   transition: color 0.3s ease;
@@ -213,20 +218,20 @@ a {
 /* Link hover and focus state */
 a:hover,
 a:focus {
-  color: #ffcc00; /* Bright yellow accent */
+  color: #ffcc00;
   text-decoration: underline;
   outline: none;
 }
 
 /* For links inside .contact-link and .highlight-link classes */
-.contact-link, 
+.contact-link,
 .highlight-link {
   color: #2b6777;
   font-weight: 700;
   text-decoration: none;
 }
 
-.contact-link:hover, 
+.contact-link:hover,
 .contact-link:focus,
 .highlight-link:hover,
 .highlight-link:focus {
@@ -235,6 +240,7 @@ a:focus {
   outline: none;
 }
 
+/* Modal Styling */
 #projectModal {
   background-color: #FAFAFA;
   color: #333333;
@@ -242,7 +248,8 @@ a:focus {
   padding: 1.5rem;
   border-radius: 8px;
   max-width: 600px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin: 2rem auto;
 }
 
 #modalTitle {
@@ -295,4 +302,9 @@ a:focus {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
 }
