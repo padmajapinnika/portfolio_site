@@ -2,63 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Padmaja's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Padmaja Pinnika | Full-Stack Web Developer Portfolio</title>
 
   <!-- Fonts and Styles -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
-  <link rel="stylesheet" type="text/css" href="css/style.production.css"/>
-  <link rel="icon" href="img/fav_icon.png" type="image/x-icon"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="css/style.production.css" />
+  <link rel="icon" href="img/fav_icon.png" type="image/x-icon" />
 </head>
 <body>
 
   <!-- Header -->
-  <header class="page-header">
+  <header class="page-header" role="banner">
     <div class="container header-wrapper">
-      <h1 class="page-header__title">Padmaja Pinnika</h1>
-      <nav class="main-navigation">
+      <h1 class="page-header__title logo">Padmaja Pinnika</h1>
+      <nav class="main-navigation" role="navigation" aria-label="Primary Navigation">
         <ul class="navigation-list">
           <li><a href="index.html" class="navigation-list__item navigation-list__item--active" aria-current="page">Home</a></li>
           <li><a href="about.html" class="navigation-list__item">About</a></li>
-          <li><a href="work.html" class="navigation-list__item">Work</a></li>
+          <li><a href="work.html" class="navigation-list__item">Projects</a></li>
+          <li><a href="skills.html" class="navigation-list__item">Skills</a></li>
           <li><a href="contact.html" class="navigation-list__item">Contact</a></li>
+
         </ul>
       </nav>
     </div>
   </header>
 
   <!-- Main Content -->
-  <main>
-    <section class="hero">
+  <main role="main">
+    <section class="hero" aria-label="Introduction">
       <div class="container hero-content">
-        <img src="img/profile.png" alt="Padmaja's profile image" class="hero__image" />
+        <img src="img/profile.png" alt="Portrait of Padmaja Pinnika" class="hero__image" />
         <div class="hero__text">
-          <h2>Hello, I'm <strong>Padmaja Pinnika</strong></h2>
-          <p class="job-title">A passionate <strong>Web Developer</strong> based in the USA</p>
-          <p>I love building user-friendly websites and applications.</p>
-          <a class="btn" href="https://github.com/padmajapinnika" target="_blank">Check out my work on GitHub</a>
+          <h2>Hi, I'm Padmaja Pinnika</h2>
+          <p class="intro-paragraph">
+            I am a <strong>Full-Stack Web Developer</strong> with a degree in Electronics and Communication Engineering and professional experience in frontend-focused production support at Accenture.<br /><br />
+            I specialize in building clean, accessible, and user-centric web applications that solve real-world problems.<br /><br />
+            Currently, I am honing my skills in <strong>React</strong>, <strong>Node.js</strong>, <strong>Python/Django</strong>, and <strong>React Native</strong> for mobile development.<br /><br />
+            I am passionate about learning, collaboration, and contributing to technology that makes a positive impact.
+          </p>
+
+          <a class="btn" href="work.html" aria-label="View my projects">Explore My Work</a>
+          <a class="btn" href="contact.html" aria-label="Contact me">Get In Touch</a>
+          <a class="btn" href="img/Padmaja_Resume.pdf" download aria-label="Download my resume">Download Resume</a>
+
+          <p class="mission">
+            My mission is to create intuitive digital experiences that empower users and drive sustainable innovation in tech.
+          </p>
         </div>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="page-footer">
+  <footer class="page-footer" role="contentinfo">
     <div class="container">
       <p>Connect with me</p>
-      <div class="social-media">
-        <a href="https://github.com/padmajapinnika" target="_blank" aria-label="GitHub">
+      <div class="social-media" role="list">
+        <a href="https://github.com/padmajapinnika" target="_blank" rel="noopener" aria-label="GitHub profile" role="listitem">
           <img src="img/github.svg" alt="GitHub icon" />
         </a>
-        <a href="https://www.linkedin.com/in/pinnika-padmaja-73110b20b/" target="_blank" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/pinnika-padmaja-73110b20b/" target="_blank" rel="noopener" aria-label="LinkedIn profile" role="listitem">
           <img src="img/linkedin icon.svg" width="33" alt="LinkedIn icon" />
         </a>
-         <a href="https://medium.com/@padmajapinnika" target="_blank" aria-label="Medium">
-        <img src="img/medium.svg" width="33" alt="Medium icon" />
-      </a>
+        <a href="https://medium.com/@padmajapinnika" target="_blank" rel="noopener" aria-label="Medium profile" role="listitem">
+          <img src="img/medium.svg" width="33" alt="Medium icon" />
+        </a>
       </div>
     </div>
   </footer>

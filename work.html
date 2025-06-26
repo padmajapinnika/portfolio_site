@@ -24,6 +24,7 @@
           <li><a href="index.html" class="navigation-list__item navigation-list__item--active" aria-current="page">Home</a></li>
           <li><a href="about.html" class="navigation-list__item">About</a></li>
           <li><a href="work.html" class="navigation-list__item">Work</a></li>
+          <li><a href="skills.html" class="navigation-list__item">Skills</a></li>
           <li><a href="contact.html" class="navigation-list__item">Contact</a></li>
         </ul>
       </nav>
@@ -91,6 +92,7 @@
       technologies: "React Native,Expo,Firebase Firestore,Gifted Chat,AsyncStorage",
       objective: "The \"Chat App\" is a mobile chat application built with React Native and Expo. It provides users with a seamless chat experience where they can send messages, share images, and their location. The app uses Google Firebase for real-time data storage and authentication.",
       github: "https://github.com/padmajapinnika/chat-app",
+      caseStudy: "img/case-study-for-chatapp.pdf",
       thumbnail: "img/chat_app.png",
     },
     {
@@ -145,6 +147,16 @@
       liveLink.style.fontWeight = "bold";
       modalLinks.appendChild(liveLink);
     }
+    if (project.caseStudy) {
+      const caseLink = document.createElement('a');
+      caseLink.href = project.caseStudy;
+      caseLink.target = "_blank";
+      caseLink.textContent = "Case Study";
+      caseLink.style.color = "#6f42c1";  // Purple-ish color, or choose your own
+      caseLink.style.fontWeight = "bold";
+      modalLinks.appendChild(caseLink);
+  
+}
 
     modal.style.display = "flex";
   }
